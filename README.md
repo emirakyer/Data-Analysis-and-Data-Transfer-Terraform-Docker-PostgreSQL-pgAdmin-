@@ -136,7 +136,8 @@ Once the Docker containers are running, you can ingest the NYC taxi data using t
 
 
 
-![Ekran görüntüsü 2024-01-22 220752](https://github.com/emirakyer/Data-Analysis-and-Data-Transfer-Terraform-Docker-PostgreSQL-pgAdmin-/assets/124304427/dd0bbc29-5840-4641-9ad5-9d303d40903c)
+![python-logo-1](https://github.com/emirakyer/dbt-new/assets/124304427/5cce667e-962c-4442-8c8e-d06c7e3fd667)
+
 
 
 Bash
