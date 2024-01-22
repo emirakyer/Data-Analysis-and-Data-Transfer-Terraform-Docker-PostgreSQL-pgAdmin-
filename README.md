@@ -1,4 +1,5 @@
-﻿
+![Ekran görüntüsü 2024-01-22 213039](https://github.com/emirakyer/Data-Analysis-and-Data-Transfer-Terraform-Docker-PostgreSQL-pgAdmin-/assets/124304427/6df18b85-562f-43a6-9545-cabb231f00ee)﻿
+
 
 Docker + Postgres
 
@@ -10,6 +11,7 @@ Docker and Postgres are essential technologies for data engineers to manage and 
 
 
 
+![Ekran görüntüsü 2024-01-22 220752](https://github.com/emirakyer/dbt-new/assets/124304427/28b23bca-a43e-4cf1-8c17-d5f81c994556)
 
 
 GCP + Terraform
@@ -59,7 +61,10 @@ In conclusion, GCP and Terraform are important technologies for data engineers. 
 
 
 
-For the course you'll need:
+![Ekran görüntüsü 2024-01-22 224354](https://github.com/emirakyer/dbt-new/assets/124304427/69b1a95d-161a-4426-b454-94e31ebe0e20)
+
+
+For the project you'll need:
 
 * Python 3 (e.g. installed with Anaconda)
 * Google Cloud SDK
@@ -131,17 +136,13 @@ Once the Docker containers are running, you can ingest the NYC taxi data using t
 
 
 
-Bash
+![Ekran görüntüsü 2024-01-22 220752](https://github.com/emirakyer/Data-Analysis-and-Data-Transfer-Terraform-Docker-PostgreSQL-pgAdmin-/assets/124304427/dd0bbc29-5840-4641-9ad5-9d303d40903c)
 
+
+Bash
 
 $URL = "https://github.com/DataTalksClub/nyc-tlc-data/releases/download/green/green_tripdata_2019-09.csv.gz"
 python ingest_data.py --user root --password root --host localhost --port 5432 --db ny_taxi --table_name yellow_taxi_trips --url $URL
-
-
-
-
-
-
 
 
 
@@ -197,6 +198,7 @@ This analysis can reveal how much passengers tend to tip based on the pick-up zo
 
 
 4. Finding Highest Tip from Astoria:
+   
 SQL
 SELECT
   z2."Zone",
