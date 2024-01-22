@@ -142,7 +142,7 @@ Once the Docker containers are running, you can ingest the NYC taxi data using t
 Bash
 
 $URL = "https://github.com/DataTalksClub/nyc-tlc-data/releases/download/green/green_tripdata_2019-09.csv.gz"
-python ingest_data.py --user root --password root --host localhost --port 5432 --db ny_taxi --table_name yellow_taxi_trips --url $URL
+python ingest_data.py --user root --password root --host localhost --port 5432 --db ny_taxi --table_name green_taxi_trips --url $URL
 
 
 
@@ -153,7 +153,7 @@ Let's do some analysis!
 
 SQL
 SELECT * FROM greentripdata201909 LIMIT 10;
-Kodu kullanırken dikkatli olun. Daha fazla bilgi
+
 This query simply retrieves the first 10 rows from the greentripdata201909 table. This lets you get a glimpse of the data structure, including column names and sample values.
 
 
@@ -163,7 +163,7 @@ This query simply retrieves the first 10 rows from the greentripdata201909 table
 SQL
 select min("lpep_pickup_datetime"),max("lpep_pickup_datetime")
 from public.greentripdata201909
-Kodu kullanırken dikkatli olun. Daha fazla bilgi
+
 This query finds the minimum and maximum values of the lpep_pickup_datetime column. This tells you the earliest and latest timestamps present for taxi pickups in the dataset.
 
 
@@ -216,7 +216,7 @@ GROUP BY
 ORDER BY
   Max_tip DESC
 LIMIT 1;
-Kodu kullanırken dikkatli olun. Daha fazla bilgi
+
 This query focuses on pick-up zones within the "Astoria" area. It:
 
 Uses a double join similar to the previous query but based on both pick-up and drop-off zones.
